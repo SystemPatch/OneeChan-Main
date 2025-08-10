@@ -210,6 +210,9 @@ span.hide-announcement {
   top: 135px;
   right: 10px;
 }
+.identityIcon {
+  margin-bottom: -3px;
+}
 :root.isLight img[src*='//boards.4chan.org/js/jsMath/fonts/'] {
   filter: invert(100%);
   -webkit-filter: invert(100%);
