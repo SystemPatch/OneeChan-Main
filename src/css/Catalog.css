@@ -45,10 +45,10 @@ div.thread {
   margin-top: 8px;
 }
 :root.catalog-background .extended-large .thread {
-    min-height: 410px;
+  min-height: 410px;
 }
 :root.catalog-background .extended-small .thread {
-    min-height: 320px;
+  min-height: 320px;
 }
 /* Thumbnails */
 :root.catalog-thumbsize .thumb,

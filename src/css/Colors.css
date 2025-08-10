@@ -6,6 +6,8 @@ div.boardBanner,
 #menu,
 input:not(.jsColor),
 textarea,
+a.summary,
+.pages strong>a,
 #qr-filename-container,
 #post-preview,
 .post-last,
@@ -46,10 +48,6 @@ body.is_catalog .button,
 .tegaki-tb-btn {
   color: " + $SS.theme.linkColor.hex + " !important;
 }
-a.summary,
-.pages strong>a {
-  color: " + $SS.theme.textColor.hex + " !important;
-}
 #header-bar #notifications a {
   color: #ffffff !important;
 }
@@ -62,7 +60,8 @@ body.is_catalog .button:hover,
   color: " + $SS.theme.linkHColor.hex + " !important;
 }
 /* Header */
-#header-bar, a.current {
+#header-bar,
+a.current {
   color: " + $SS.theme.headerColor.hex + " !important;
 }
 #header-bar a:not(.current) {
@@ -72,10 +71,10 @@ body.is_catalog .button:hover,
   color: " + $SS.theme.headerLHColor.hex + " !important;
 }
 #custom-board-list .current {
-    border-bottom: 1px solid rgba(" + $SS.theme.linkColor.rgb + ",1) !important;;
+  border-bottom: 1px solid rgba\(" + $SS.theme.linkColor.rgb + ",1) !important;
 }
 #custom-board-list .current:hover {
-    border-bottom: 1px solid rgba(" + $SS.theme.linkHColor.rgb + ",1) !important;;
+  border-bottom: 1px solid rgba\(" + $SS.theme.linkHColor.rgb + ",1) !important;
 }
 /* Greentext */
 .postMessage>.quote,
@@ -113,19 +112,19 @@ s:hover .quote,
 /* Code Tags */
 .prettyprint,
 .catalog-code {
-  background: none repeat scroll 0 0 rgba(" + $SS.theme.codeBackground + ") !important;
-  border: 1px solid rgba(" + $SS.theme.codeBorder + ") !important;
+  background: none repeat scroll 0 0 rgba\(" + $SS.theme.codeBackground + ") !important;
+  border: 1px solid rgba\(" + $SS.theme.codeBorder + ") !important;
 }
 .pun {
-  color: rgba(" + $SS.theme.textColor.rgb + ",.4) !important;
+  color: rgba\(" + $SS.theme.textColor.rgb + ",.4) !important;
 }
 ::-webkit-input-placeholder {
-  color:rgba(" + $SS.theme.textColor.rgb + ",.4) !important;
+  color: rgba\(" + $SS.theme.textColor.rgb + ",.4) !important;
 }
 #qr .field::-moz-placeholder,
 ::-moz-placeholder,
 #qr-no-file {
-  color: rgba(" + $SS.theme.textColor.rgb + ",.4) !important;
+  color: rgba\(" + $SS.theme.textColor.rgb + ",.4) !important;
 }
 /* Backgrounds */
 body {
@@ -142,7 +141,7 @@ body.is_catalog .panel,
 .flashListing tr:nth-of-type(2n+1),
 .dd-menu ul,
 :root.catalog-hover-expand .catalog-container:hover > .post {
-  background: rgba(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ") !important;
+  background: rgba\(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ") !important;
 }
 .tab-label,
 #add-mascot,
@@ -152,16 +151,16 @@ body.is_catalog .panel,
 }
 :root.recolor-even .thread>.replyContainer:nth-of-type(even):not(.hidden) .post:not(.reply:target),
 :root.recolor-even .flashListing tr:nth-of-type(2n):not(.highlightPost) {
-  background: rgba(" + $SS.theme.mainColor.shiftRGB(-10) + "," + $SS.theme.replyOp + ") !important;
+  background: rgba\(" + $SS.theme.mainColor.shiftRGB(-10) + "," + $SS.theme.replyOp + ") !important;
 }
 .flashListing tr:nth-of-type(2n) {
-  background: rgba(" + $SS.theme.bgColor.rgb + "," + $SS.theme.replyOp + ");
+  background: rgba\(" + $SS.theme.bgColor.rgb + "," + $SS.theme.replyOp + ");
 }
 :root:not(.header-gradient) #header-bar {
-  background: rgba(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ") !important;
+  background: rgba\(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ") !important;
 }
 :root.header-gradient #header-bar {
-  background: linear-gradient(rgb\(" + $SS.theme.headerBGColor.shiftRGB(15) + "),rgba(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ")) !important;
+  background: linear-gradient\(rgb\(" + $SS.theme.headerBGColor.shiftRGB(15) + "), rgba\(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ")) !important;
 }
 :root.header-shadow #header-bar {
   box-shadow: none !important;
@@ -173,20 +172,20 @@ body.is_catalog .panel,
 .qr-link,
 .pages.cataloglink,
 .pages strong>a {
-  background:linear-gradient(rgb\(" + $SS.theme.mainColor.shiftRGB(15) + "),rgb(" + $SS.theme.mainColor.rgb + ")) !important;
+  background: linear-gradient\(rgb\(" + $SS.theme.mainColor.shiftRGB(15) + "), rgb\(" + $SS.theme.mainColor.rgb + ")) !important;
 }
 .options-button:hover,
 .import-input:hover + .options-button,
 .pages strong>a:hover,
 .dd-menu li:hover {
-  background:rgb\(" + $SS.theme.mainColor.shiftRGB(15) + ");
+  background: rgb\(" + $SS.theme.mainColor.shiftRGB(15) + ");
 }
 .focused.entry {
-  background:rgb\(" + $SS.theme.mainColor.shiftRGB(10) + ") !important;
+  background: rgb\(" + $SS.theme.mainColor.shiftRGB(10) + ") !important;
 }
 .qr-link:hover,
 :root.vertical-qr #qr .move {
-  background:rgb\(" + $SS.theme.mainColor.rgb + ");
+  background: rgb\(" + $SS.theme.mainColor.rgb + ");
 }
 input:not(.jsColor),
 textarea,
@@ -207,21 +206,20 @@ input:not(.jsColor):hover,
 textarea:hover,
 select:hover,
 .captcha-root:hover {
-  background: rgb(" + $SS.theme.inputColor.hover + ") !important;
-  transition: background .2s;
+  background: rgb\(" + $SS.theme.inputColor.hover + ") !important;
 }
 hr {
-  background-image: linear-gradient(to left, rgba(" + $SS.theme.brderColor.rgb + ",0), rgb(" + $SS.theme.brderColor.rgb + "), rgba(" + $SS.theme.brderColor.rgb + ",0));
+  background-image: linear-gradient\(to left, rgba\(" + $SS.theme.brderColor.rgb + ",0), rgb\(" + $SS.theme.brderColor.rgb + "), rgba\(" + $SS.theme.brderColor.rgb + ",0));
 }
 #unread-line {
-  background-image: linear-gradient(to left, rgba(" + $SS.theme.unreadColor.rgb + ",0), rgb(" + $SS.theme.unreadColor.rgb + "), rgba(" + $SS.theme.unreadColor.rgb + ",0));
+  background-image: linear-gradient\(to left, rgba\(" + $SS.theme.unreadColor.rgb + ",0), rgb\(" + $SS.theme.unreadColor.rgb + "), rgba\(" + $SS.theme.unreadColor.rgb + ",0));
 }
 .inline {
-  background:rgba\(" + $SS.theme.mainColor.shiftRGB(-16) + ",.8)!important;
+  background: rgba\(" + $SS.theme.mainColor.shiftRGB(-16) + ",.8) !important;
 }
 :root.post-info .reply>.postInfo {
   background: rgba\(" + $SS.theme.mainColor.shiftRGB(-16) + ",.2);
-  border-bottom:1px solid rgb\(" + $SS.theme.mainColor.shiftRGB(4) + ");
+  border-bottom: 1px solid rgb\(" + $SS.theme.mainColor.shiftRGB(4) + ");
 }
 /* Borders */
 .reply,
@@ -318,7 +316,7 @@ textarea:focus,
 #qr-filename-container:focus,
 #qr-filename-container.focus,
 select:focus,
-.captcha-root:focus {
+.captcha-root:focus{
   border: 1px solid " + $SS.theme.linkColor.hex + " !important;
 }
 #search-box:hover,
@@ -339,7 +337,7 @@ select:focus,
 }
 /* 4chan X Menu */
 .suboption-list > div:last-of-type {
-  background: rgba(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ")!important;
+  background: rgba\(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ")!important;
 }
 .suboption-list > div::before,
 .suboption-list::before {
@@ -348,7 +346,7 @@ select:focus,
 }
 /* Shadows */
 #navlinks a {
-  text-shadow:" + $SS.theme.mainColor.hex + " -1px -1px,
+  text-shadow: " + $SS.theme.mainColor.hex + " -1px -1px,
   " + $SS.theme.mainColor.hex + " 1px -1px,
   " + $SS.theme.mainColor.hex + " -1px 1px,
   " + $SS.theme.mainColor.hex + " 1px 1px,
@@ -360,17 +358,17 @@ select:focus,
   rgba(0,0,0,.6) 0 0 2px;
 }
 .thumb {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
 }
 #qr,
 #thread-watcher {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.1) !important;
 }
 /* Thread Stats */
 :root.style-stats #thread-stats,
 :root.style-stats #updater,
 :root.style-stats #stats {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
   padding: 3px 6px !important;
   border: 1px solid;
 }
@@ -404,7 +402,7 @@ select:focus,
 /* /f/ */
 #swf-embed-header.postblock {
   border: 1px solid " + $SS.theme.brderColor.hex + " !important;
-  background-color: rgba(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ") !important;
+  background-color: rgba\(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ") !important;
   color: " + $SS.theme.linkColor.hex + " !important;
 }
 #swf-embed-close {
@@ -450,6 +448,6 @@ select:focus,
 /* 4chan XT: fxtwitter embed card */
 .fxt-card {
   color: " + $SS.theme.textColor.hex + " !important;
-  background-color: rgba(" + $SS.theme.bgColor.rgb + "," + $SS.theme.replyOp + ") !important;
+  background-color: rgba\(" + $SS.theme.bgColor.rgb + "," + $SS.theme.replyOp + ") !important;
   border: 1px solid " + $SS.theme.brderColor.hex + " !important;
 }

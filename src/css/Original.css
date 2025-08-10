@@ -42,7 +42,7 @@
   clear: left;
 }
 .mu-s {
-  font-weight: bold;
+  font-weight: 700;
 }
 .mu-i {
   font-style: italic;
@@ -75,19 +75,19 @@ div.op.post div.file .fileThumb {
 /* Padding according to header position */
 .fixed.bottom-header.is_thread body {
   padding-bottom: 0em;
-  padding-top: 0.5em;
+  padding-top: .5em;
 }
 .fixed.bottom-header.is_index body {
   padding-bottom: 4.5em;
-  padding-top: 0.5em;
+  padding-top: .5em;
 }
 .fixed.bottom-header.is_catalog body,
 .fixed.bottom-header.catalog-mode body {
   padding-bottom: 3em;
-  padding-top: 0.5em;
+  padding-top: .5em;
 }
 .fixed.bottom-header body {
-  padding-top: 0.5em;
+  padding-top: .5em;
 }
 :root.is_index.bottom-header:not(.autohide) body {
   padding-bottom: 5em !important;
@@ -97,13 +97,13 @@ div.op.post div.file .fileThumb {
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
 }
 .fixed.top-header.is_thread body {
-  padding-bottom: 0em;
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
+  padding-bottom: 0;
 }
 .fixed.top-header.is_catalog body,
 .fixed.top-header.catalog-mode body {
-  padding-bottom: 0.5em;
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
+  padding-bottom: .5em;
 }
 .fixed.top-header.autohide body {
   padding-top: 2em !important;
@@ -118,7 +118,7 @@ div.post {
 :root:not(.reply-fit-width) #delform div.reply:not([hidden]) {
   display: table !important;
 }
-:root:not(.reply-fit-width) #delform .stub ~ div.reply:not([hidden]) {
+:root:not(.reply-fit-width) #delform .stub~div.reply:not([hidden]) {
   display: none !important;
 }
 table.flashListing {
@@ -145,16 +145,16 @@ s {
 }
 span.spoiler,
 s,
-s:not(:hover) > a,
-s:not(:hover) > .linkify {
-  color: rgb(0, 0, 0) !important;
-  background: none repeat scroll 0 0 rgb(0, 0, 0) !important;
+s:not(:hover)>a,
+s:not(:hover)>.linkify {
+  color: #000;
+  background: none repeat scroll 0 0 #000;
 }
 span.spoiler:hover,
 s:hover,
 span.spoiler:focus,
 s:focus {
-  color: rgb(255, 255, 255) !important;
+  color: #fff;
 }
 #globalMessage,
 .boardBanner {
@@ -165,7 +165,7 @@ div.sideArrows {
   margin-right: 2px;
   margin-top: 0;
   margin-left: 2px;
-  opacity: 0.3;
+  opacity: .3;
 }
 hr,
 #boardNavDesktopFoot {
@@ -182,10 +182,10 @@ table {
   text-align: center !important;
 }
 .adl {
-    font-size: .76em;
+  font-size: .76em;
 }
 #qf-box {
-    width: 120px;
+  width: 120px;
 }
 span.hide-announcement {
   margin-left: 3px;
