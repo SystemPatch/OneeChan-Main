@@ -114,7 +114,6 @@
             "Recolor Even Replies": [false, "Makes every other post a darker color. If Quote Threading is enabled darkens every root reply."],
             "Reduce Thumbnail Opacity": [false, "Reduces opacity of thumbnails."],
             "Backlink Icons": [true, "Use icons for backlinks instead of text."],
-            "Backlinks on Bottom": [false, "Move backlinks to the bottom right of replies."],
             "Borders": [
                 2, "Changes which sides of replies have borders.", [{
                     name: "Normal (4chan default)",
@@ -3593,7 +3592,6 @@
                 $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
                 $("html").optionClass("Recolor Even Replies", true, "recolor-even");
                 $("html").optionClass("Backlink Icons", true, "backlink-icon");
-                $("html").optionClass("Backlinks on Bottom", true, "backlink-bottom");
                 $("html").optionClass("Autohide Style", 2, "vertical-qr");
                 $("html").optionClass("Autohide Style", 3, "fade-qr");
                 $("html").optionClass("Tether QR to Sidebar", false, "qr-float");
