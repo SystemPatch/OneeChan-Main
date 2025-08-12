@@ -417,12 +417,12 @@ body.is_index div.navLinks {
   transition: color .25s, border-color .25s, width .25s;
 }
 /* Thumb Opacity */
-:root.thumb-opacity .fileThumb {
+:root.thumb-opacity .fileThumb img:not(.full-image) {
   opacity: .5;
   transition: opacity .3s ease-out 0s;
 }
-:root.thumb-opacity .fileThumb:hover {
-  opacity: 1.0;
+:root.thumb-opacity .fileThumb img:not(.full-image):hover {
+  opacity: 1;
 }
 /* Post Info on Hover */
 :root.info-on-hover .postContainer .fileText {
